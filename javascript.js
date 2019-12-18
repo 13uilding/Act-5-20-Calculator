@@ -67,7 +67,7 @@ $(".btn-danger").on("click", function(event){
 // Result button  THIS IS WHERE THE PROBLEM IS HAPPENING HENCE THE console.logs
 $(".btn-success").on("click", function(event){
   event.preventDefault();
-  var num1 = parseInt($("#second-number").text());
+  var num1 = parseInt($("#first-number").text());
   var num2 = parseInt($("#second-number").text());
   // console.log(num1)
   // console.log(typeof num2)
@@ -87,6 +87,17 @@ $(".btn-success").on("click", function(event){
   // console.log(result);
   $("#result").text(result);
 
+});
+
+$(".btn-dark").on("click", function(event){
+  event.preventDefault();
+  $("#first-number").empty();
+  $("#operator").empty();
+  $("#second-number").empty();
+  $("#result").empty();
+  firstNumberFill = true;
+
+  
 })
 
 });
