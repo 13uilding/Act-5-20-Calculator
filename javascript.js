@@ -26,39 +26,30 @@ $(".btn-danger").on("click", function(event){
     case "plus":
       operatorField.text("+");
       firstNumberFill = false;
-      operator = "+"
-      console.log(operatorField.text());
       break;
 
       // Move Buttons (Keyboard Right)
     case "minus":
       operatorField.text("-");
       firstNumberFill = false;
-      operator = "-"
-      console.log(operatorField.text());
       break;
 
       // Move Buttons (Keyboard Up)
     case "times":
       operatorField.html(`*`);// &times;
       firstNumberFill = false;
-      operator = "*"
-      console.log(operatorField.text());
       break;
 
       // Move Buttons (Keyboard Left)
     case "divide":
       operatorField.html("/"); // &divide;
       firstNumberFill = false;
-      operator = "/"
-      console.log(operatorField.text());
       break;
 
       // Move Buttons (Keyboard Left)
     case "power":
       operatorField.text("**"); //^
       firstNumberFill = false;
-      operator = "**";
       break;
 
     }
